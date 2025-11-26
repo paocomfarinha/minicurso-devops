@@ -41,3 +41,4 @@ jobs:
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/minicurso-devops:latest .
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/minicurso-devops:${{ env.commit_hash }}
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/minicurso-devops:latest
+      
